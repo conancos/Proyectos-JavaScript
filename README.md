@@ -18,4 +18,4 @@ Pero haré mas cambios en un futuro.
 Gracias por la visita, ya que has llegado hasta aquí, te diré que hay un lugar oculto (LINK EN PALABRA RELACIONADA), donde podrás ver al youtuber español más grande (en todos los sentidos😂) del mundo!
 Un video participando en una Sesión Grupal de Hipnósis muuy divertida.
 
-JOAQUIN MARTINEZ CORTES - conancos.dev/brainactivity
+JOAQUIN MARTINEZ CORTES - https://conancos.dev/brainactivity
