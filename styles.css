@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Labrada:ital,wght@0,500;1,500&family=Shadows+Into+Light&family=Zen+Dots&display=swap');
+
+:root {
+
+  --textoColor0: #000;
+  --textoColor1: #fff;
+  --textoColor11: #fff;
+  --textoColor2: #444;
+  --textoColor3: teal;
+  --textoColorJ: #f0f;
+  --textoColorI: #c0c;
+  --textoColorH: #909;
+  --textoColorG: #f00;
+  --textoColorF: #f75;
+  --textoColorE: #0ff;
+  --textoColorD: #0f0;
+  --textoColorC: #006;
+  --textoColorB: #05f;
+  --textoColorA: #0af;
+  /*texto Sombra*/
+  --textoShadow0: 0 0 4px #000, 0 0 8px #000, 0 0 14px #000;
+  --textoShadow00: 2px 2px 3px #000, 4px 4px 4px #000;
+  --textoShadow1: 0 0 4px #04f, 0 0 8px #04f, 0 0 14px #04f;
+  --textoShadow11: 0 0 4px #04f, 0 0 8px #04f, 0 0 14px #04f, 0 0 22px #04f, 0 0 30px #04f, 0 0 35px #04f;
+  --textoShadow2: 0 0 4px #fff, 0 0 8px #fff;
+  --textoShadow22: 0 0 8px #fff;
+  --textoShadow3: 0 0 8px #0ff, 0 0 0px #0ff, 0 0 14px #0ff;
+  --textoShadow33: 0 0 4px #0ff, 0 0 8px #0ff, 0 0 15px #0ff, 0 0 22px #0ff, 0 0 30px #0ff, 0 0 35px #0ff;
+  --textoShadow4: 0 0 4px #d0d, 0 0 8px #d0d, 0 0 14px #d0d;
+  --textoShadow44: 0 0 4px #d0d, 0 0 8px #d0d, 0 0 14px #d0d, 0 0 22px #d0d, 0 0 30px #d0d, 0 0 35px #d0d;
+  --textoShadow444: 0 0 4px #f0f, 0 0 8px #f0f, 0 0 14px #f0f;
+  --textoShadow5: 0 0 4px #0af, 0 0 8px #0af, 0 0 14px #0af;
+  --textoShadow6: 0 0 4px #006, 0 0 8px #006, 0 0 0px #006;
+  --textoShadow7: 0 0 4px #444, 0 0 8px #444;
+  --textoShadow77: 0 0 4px #444, 0 0 8px #444, 0 0 12px #444;
+  --textoShadow8: 0 0 4px #0f0, 0 0 8px #0f0, 0 0 14px #0f0;
+  --textoShadow88: 0 0 4px #0f0, 0 0 8px #0f0, 0 0 14px #0f0, 0 0 20px #0f0, 0 0 25px #0f0;
+  /* headers */
+  --headerColor0: #000;
+  --headerColor1: #006;
+  --headerColor2: #fff;
+  --headerColor3: #0ff;
+  --headerColor4: #0af;
+  --headerColor5: #05f;
+  --headerColor6: #0ff;
+  --headerShadow1: 0 0 4px #0af, 0 0 8px #0af, 0 0 14px #0af, 0 0 20px #0af;
+  --headerShadow2: 0 0 4px #02f, 0 0 8px #02f, 0 0 14px #02f;
+  --headerShadow3: 0 0 4px #0df, 0 0 8px #0df, 0 0 14px #0df, 0 0 20px #0df, 0 0 25px #0df;
+  --headerShadow4: 0 0 4px #fff, 0 0 8pc #fff, 0 0 14px #fff;
+  --headerShadow5: 0 0 4px #000, 0 0 8px #000, 0 0 14px #000;
+  --headerShadow6: 0 0 4px #444, 0 0 8px #444, 0 0 14px #444;
+  /* background HEADER */
+  --fondoHeader1: url("./media/FondoModoNocheHeader.jpg");
+  /* Fondo Cerebro A */
+  --fondoHeader2: url("./media/OndaActividadElectrica.gif");
+  /* Fondo Onda GIF */
+
+  /* background  */
+  --fondoPantalla0: #134;
+  --fondoPantalla1: #fff;
+  --fondoPantalla2: #d1d3de;
+
+  --fondoPantalla3: url("./media/DisenoTecMedicoCerebro.jpg");
+
+  /*variables Header gif - Parámetros válidos para sustituciones*/
+  /* --sizeHeaderGif: 119%;
+  --posHeaderGif: left;
+  --max-widthHeaderGif: 950px; */
+  /*variables Header img cerebro */
+  /* --sizeHeaderMind: 100%;
+  --posHeaderMind: center -110px;
+  --max-widthHeaderMind: unset; */
+  /* variables Header img/gif*/
+  --sizeHeader: ;
+  --posHeader: center -111px;
+  --max-widthHeader: ;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Zen Dots', monospace;
+
+  color: var(--textoColor1);
+
+  /* background: var(--fondoPantalla3);  */
+  /* 👀👀👀 FONDO DE PANTALLA 👀👀👀 */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+
+  background: var(--fondoPantalla, #134);
+  margin: 0;
+  padding: 0;
+}
+
+/*🧾🧾🧾 NAVBAR 🧾🧾🧾*/
+
+#navbar {
+  display: block;
+  position: fixed;
+  width: 300px;
+  border-right: 3px groove #ffc;
+  /* min-height: 1000px; */
+  overflow: auto;
+  /* sin barra scroll*/
+  height: 100vh;
+  background-image: linear-gradient(to right, black, slategray);
+  box-sizing: border-box;
+}
+
+/*🧾🧾🧾 NAVBAR MOVIL 🧾🧾🧾*/
+
+@media (max-width: 768px) {
+  #navbar {
+    border-right: 0;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    /*max-width: calc(100vw-...);Si hay problemas-activar❗❗*/
+    height: 100%;
+    max-height: 139px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*No visible*/
+    /* height: 20%; */
+    border: none;
+    border-bottom: 3px groove #ffc;
+    /* filter: drop-shadow(0 2px 3px #6ff); */
+    /* ::-webkit-scrollbar: none; */
+  }
+}
+
+#navbar header {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0px 0px 4px aqua, 0 0 8px aqua, 0 0 10px aqua;
+  line-height: 1.3;
+  overflow: hidden;
+  position: relative;
+  font-weight: lighter;
+  margin: 25px 0 35px 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  #navbar header {
+    display: block;
+    min-width: 275px;
+    width: 100%;
+    text-align: center;
+    /* line-height: 1.3; */
+    overflow: hidden;
+    margin: 0px;
+    /* padding: 5px; */
+    background-image: linear-gradient(to right, black, slategray, black);
+  }
+
+  @media (max-width: 329px) {
+    #navbar header {
+      font-size: 1.4rem
+    }
+  }
+
+  .divisor {
+    position: absolute;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 0 3px 1px #0ff;
+  }
+}
+
+#navbar ul {
+  background-image: linear-gradient(to right, black, slategray);
+  height: auto;
+  overflow-X: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  #navbar ul {
+    height: 104px;
+    background-image: linear-gradient(to right, black, slategray, black);
+    transition: all .4s
+  }
+}
+
+/* Query móviles muy pequeños 📱*/
+/* @media (max-height: 568px) and (max-width: 374px) {
+  #navbar ul {
+    height: 64px;
+  }
+  #navbar {
+    height: 67px;
+  }
+  #navbar header {
+    display: none;
+  }
+} */
+
+#navbar li {
+  overflow: auto;
+  /*pendiente de quitar*/
+  text-align: left;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #navbar li {
+    text-align: center;
+  }
+
+  /* #navbar li:hover { */
+  /* border-top: 1px solid aqua; */
+  /* border-bottom: 1px solid aqua; */
+}
+
+#navbar a {
+  display: block;
+  color: var(--textoColorB, #05f);
+  text-shadow: var(--textoShadow00);
+  /* font-weight: bold; */
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0px 0px;
+  padding-left: 25px;
+  font-size: 1.12rem;
+  transition: all 1s;
+}
+
+#navbar a:not(:visited) {
+  color: var(--textoColorB, #05f) !important;
+}
+
+#navbar a:visited {
+  display: block;
+  color: aqua;
+}
+
+#navbar a:hover {
+  background-image: linear-gradient(90deg, teal -30%, black, black, teal);
+  box-shadow: inset 0px 0px 8px 5px teal;
+}
+
+/*📲📲📱📱 Query Mobile´📱📱📲📲*/
+@media (max-width: 768px) {
+  #navbar a {
+    /* text-shadow: 2px 2px 4px #000, 4px 4px 4px black; */
+    /* color: #05f; */
+    font-weight: normal;
+    font-size: 1.3rem;
+    padding: 6px 0px;
+  }
+
+  /* @media (max-height: 645px) {  
+  #navbar a {
+    padding: 4px 0px;    
+    font-size: 1em;
+    transition: all 1s;
+  }
+} */
+
+  @media (max-width: 345px) {
+    #navbar a {
+      font-size: 1.1rem;
+      padding: 4px 0px;
+    }
+  }
+
+  /*   #navbar a:visited {
+    color: #0ff
+  } */
+
+  #navbar a:hover {
+    background-image: linear-gradient(90deg, teal, black, black, teal);
+    box-shadow: inset 0px 0px 5px 5px teal;
+    /* color: #0ff; */
+  }
+
+  #navbar a:hover:not(:visited) {
+    background-image: linear-gradient(90deg, teal, black, black, teal);
+    box-shadow: inset 0px 0px 5px 5px teal;
+    /* color: #05f; */
+
+  }
+}
+
+/* 🧾🧾🧾 END OF NAVBAR 🧾🧾🧾*/
+
+/* 🌜🌜🌜 .container-buttons🧙‍♂️🧙‍♂️🧙‍♂️*/
+
+#main-doc nav.container-buttons {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  right: 10%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+#main-doc button.buttons {
+  border-radius: 15px;
+  /* width: 25%; */
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  color: #0ff;
+  background: #111;
+  border: 2px groove #0ff;
+  transition: 1s;
+}
+
+#main-doc button.buttons:hover {
+  background: var(--textoColorI)
+}
+
+@media (max-width: 768px) {
+  #main-doc nav.container-buttons {
+    top: 30px;
+    transition: 1s
+  }
+}
+
+/*🌜🌜🌜 END OF .container-buttons🧙‍♂️🧙‍♂️🧙‍♂️*/
+
+/* 🔰 🔰 🔰 MAIN_DOC 🔰 🔰 🔰 */
+#main-doc {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 300px;
+  margin: 0;
+  padding: 0;
+  /*outline: 1px solid #00f;*/
+  width: calc(100vw - 330px);
+  box-sizing: border-box;
+
+}
+
+@media (max-width: 768px) {
+  #main-doc {
+    position: absolute;
+    /* max-width: 1050px;*/
+    width: calc(100%);
+    /*ANCHO*/
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    top: 145px;
+    text-align: left;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #introduccion:target,
+  .main-section~:target {
+    /* Scroll a Introducción y sus hermanos*/
+    scroll-margin-top: 145px;
+  }
+
+  /* .main-section~:target {
+    scroll-margin-top: 145px;
+    animation-delay: 3.5s;
+    animation: destello .5s ease-in;
+  } */
+  /* @media (max-height: 568px) and (max-width: 374px) {
+    #introduccion:target,
+    .main-section~:target {
+      scroll-margin-top: 85px
+    }
+  } */
+
+  #main-doc>#videos>article#video_mindfulness:target {
+    scroll-margin-top: 145px;
+    animation-delay: 3.5s;
+    animation: destello .5s ease-in;
+  }
+}
+
+#main-doc>#introduccion:target,
+#main-doc .main-section~:target,
+#main-doc>#videos>article#video_mindfulness:target {
+  animation-delay: 1.5s;
+  animation: destello 1.5s backwards ease-in-out;
+}
+
+/* 💡💡💡 ANIMACIÓN FOCO 💡💡💡 */
+@keyframes destello {
+
+  0% {
+    color: #0af;
+    filter: opacity(64%);
+    text-shadow: 0 0 7px #0ff, 0 0 8px #0ff;
+  }
+
+  33% {
+    color: #fff;
+    filter: opacity(100%);
+    text-shadow: 0 0 5px #0ff, 0 0 6px #0ff;
+  }
+
+  64% {
+    color: #fff;
+    filter: opacity(64%);
+    text-shadow: 0 0 4px #0ff, 0 0 5px #0ff;
+  }
+
+  100% {
+    color: #006;
+
+    text-shadow: 0 0 2px #0ff, 0 0 1px #0ff;
+  }
+}
+
+/* 👀👀👀 img HEADER 👀👀👀  */
+#main-doc #fondo-header {
+  position: relative;
+  display: block;
+  inset: 0;
+  width: calc(100vw - 317px);
+  height: 75px;
+
+  /* Para el GIF */
+  /*max-width: 950px;
+  background-size: 119.9%;
+  background-position: left; 
+  background-image: var(--fondoHeader2);*/
+
+  /* Para la IMG Cerebro de fondo */
+
+  background-image: var(--fondoHeader, url("./media/FondoModoNocheHeader.jpg"));
+  /**/
+  background-size: var(--sizeHeader);
+  /* */
+  background-position: var(--posHeader)
+    /* center -110px */
+  ;
+  max-width: var(--max-widthHeader);
+
+  transition: 1s;
+
+  transform: rotatey(180deg);
+  background-color: #000;
+  background-repeat: no-repeat;
+
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 0;
+
+  border-radius: 25px;
+  border: outset 2px #0ff;
+  filter: drop-shadow(-14px 14px 8px #000);
+  box-shadow: inset 0px 0px 15px 7px #001;
+
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #main-doc #fondo-header {
+    display: none;
+    transition: 2s;
+    /*OCULTO
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    z-index: 0; */
+  }
+}
+
+/* 💙💙💙 main-sections💙💙💙 */
+#main-doc #introduccion {
+  display: block;
+  backdrop-filter: blur(12px);
+  /*Duplicado por fallo del navegador~Backdrop-filter*/
+  text-shadow: var(--textoShadow0, #000 +14px);
+  /* Sombra INTRODUCCIÓN FONDO 2000*/
+}
+
+#main-doc .main-section {
+  display: block;
+  max-width: 1100px;
+  margin: 75px auto;
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  z-index: 0;
+  /* width: calc(100% - 330px) */
+  background: transparent;
+  /* FONDO TRANSP-BLUR  ✨🎨✨🎨✨🎨✨🎨 */
+  backdrop-filter: blur(12px)
+}
+
+@media (min-width: 1500px) {
+
+  /* Query grande */
+  #main-doc .main-section {
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* h2 headers h2 */
+#main-doc #introduccion header {
+  /* margin: 40px 0; */
+  /* padding: 0; */
+  font-size: 2.4rem;
+  color: var(--headerColor0, #000);
+  text-shadow: var(--textoShadow2, #444 +14px);
+  /* text-shadow: 0 0 2px cyan, 0 0 4px cyan, 0 0 6px cyan; */
+}
+
+#main-doc header {
+  margin: 20px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3;
+
+  color: var(--textoColorA, #0af);
+  text-shadow: var(--textoShadow1, #04f + 14px);
+}
+
+@media (max-width: 768px) {
+  #main-doc header {
+    padding: 0;
+    /* margin-top: -20px; */
+    line-height: 1.15;
+    min-width: 250px;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 375px) {
+  #main-doc #introduccion header.introduccion {
+    font-size: 2.2rem;
+    padding: 0;
+    margin: 0
+  }
+}
+
+#main-doc .main-section article ul li {
+  padding-right: 30px;
+  text-align: left;
+}
+
+/* 🔵🟣🟢 Color Clases 🟡🟠🔴 */
+
+/* PRIMER code */
+#main-doc #introduccion code.sin_enlace {
+  font-weight: bold !important;
+  color: var(--textoColor2, #444);
+  text-shadow: var(--textoShadow2, #fff);
+  transition: 1s;
+}
+
+#main-doc #introduccion code.sin_enlace:hover {
+  background-color: var(--textoColor0, #000);
+  color: var(--textoColor1, #fff) !important;
+  text-shadow: var(--textoShadow4) !important;
+  box-shadow: inset 3px -3px 6px 3px #f0f;
+  font-weight: normal !important;
+  border: 2px outset #f0f;
+  transition: .5s;
+  line-height: 2;
+  font-size: 1.2rem;
+  scale: 1.035;
+  padding: 20px;
+  margin: inherit auto;
+}
+
+strong {
+  color: var(--textoColor0, #000);
+  text-shadow: var(--textoShadow7, #444 +8px);
+}
+
+i,
+.enlace_WP4,
+.titulo_li6,
+#estados_cerebrales ol li::marker {
+  font-style: normal;
+  color: var(--textoColorH, #909);
+  text-shadow: var(--textoShadow0, #000 +14px);
+  font-weight: bold;
+}
+
+.actividad,
+.enlace_WP1,
+.titulo_li1 {
+  font-weight: normal;
+  color: var(--textoColor1, #fff);
+  text-shadow: var(--textoShadow4, #d0d +14px);
+  transition: 1s;
+}
+
+.enlace_WP1:hover {
+  color: var(--textoColorE, #0ff);
+  /* text-shadow: var(--textoShadow4, #d0d +14); */
+  text-shadow: var(--textoShadow44, #d0d +35px);
+  transition: .5s;
+}
+
+b,
+.molecula,
+.enlace_WP2,
+.titulo_li2,
+#main-doc #cuida_tu_salud_mental article ol li ol li::marker {
+  font-weight: normal;
+  color: var(--textoColor1, #fff);
+  text-shadow: var(--textoShadow3, #0ff +14px);
+  transition: 1s;
+}
+
+/* Cambiamos el formato en INTRODUCCIÓN*/
+/* .titulo_li2 {
+  text-wrap: balance;
+  text-align: center;
+} */
+
+.titulo_li22 {
+  color: #fff;
+  text-shadow: var(--textoShadow33, #fff +8px)
+}
+
+.enlace_WP2:hover {
+  color: var(--textoColorC, #006);
+  text-shadow: var(--textoShadow33, #0ff +35px);
+  font-weight: bold;
+  transition: .5s;
+}
+
+.planta,
+.enlace_WP3,
+.titulo_li3,
+#tecnologias_relacionadas ol li::marker {
+  font-weight: normal;
+  color: var(--textoColor1, #fff);
+  text-shadow: var(--textoShadow8, #0f0 +14px);
+  transition: 1s;
+}
+
+.enlace_WP3:hover,
+#mindfulness ol li::marker {
+  color: var(--textoColor1, #fff);
+  text-shadow: var(--textoShadow88, #0f0 +25px);
+  transition: .5s;
+}
+
+.enlace_PAG {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--textoColorA, #0af);
+  text-shadow: var(--textoShadow1, #04f +22px);
+  transition: 1s;
+}
+
+.enlace_PAG:hover {
+  color: var(--textoColorE, #0ff);
+  text-shadow: var(--textoShadow11, #04f +35px);
+  transition: .5s;
+}
+
+code:hover:not(.sin_enlace) {
+  background-color: var(--textoColor0);
+  transition: 1s;
+}
+
+.titulo_li4,
+#ondas_delta li::marker,
+#ondas_theta li::marker,
+#ondas_gamma ol li::marker {
+  color: var(--textoColorC, #006);
+  text-shadow: var(--textoShadow3, #0ff +14px);
+  font-weight: bold;
+}
+
+.sin_enlace {
+  color: var(--textoColorG, #f00);
+  text-shadow: var(--textoShadow0, #000 + 14px);
+}
+
+.sin_enlace2 {
+  color: var(--textoColorF, #f75);
+  text-shadow: var(--textoShadow4);
+}
+
+table {
+  color: var(--textoColorH);
+  font-weight: bold;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #0ff, #006 45%, #0af 70%);
+  text-align: center;
+  border-radius: 15px;
+  text-shadow: 2px 2px 4px black;
+  box-shadow: 0px 0px 8px 3px #006;
+}
+
+a,
+.main-section ul li::marker {
+  font-size: inherit;
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--textoColorA, #0af);
+  text-shadow: var(--textoShadow1, #04f +14px);
+}
+
+.titulo_li5,
+#fases_del_sueno ol li::marker {
+  color: var(--textoColorA, #0af);
+  text-shadow: var(--textoShadow11, #04f +35px)
+}
+
+.titulo_li55 {
+  color: var(--textoColorA, #0af);
+  text-shadow: var(--textoShadow1, #04f +14px);
+  font-weight: bold;
+}
+
+#cuida_tu_salud_mental ol li::marker {
+  color: var(--textoColor1, #fff);
+  text-shadow: var(--textoShadow44, #f0f +35px);
+  font-weight: bold;
+}
+
+/* #ondas_theta ul li:nth-child(2)::marker,
+#ondas_theta ul li:nth-child(2) li::marker{
+  color: var(--textoColor1, #fff);
+  text-shadow: var(--textoShadow44);
+} */
+
+/* 🧬Molécula🧬 🌾Hierba🌾 🏃‍♂️Actividad🏃‍♂️ */
+code {
+  display: block;
+  margin: 20px auto;
+  padding: 2px 15px 2px 15px;
+  width: calc(100%);
+  /* max-width: 850px; */
+  text-align: center;
+  border: outset 2px #0ff;
+  border-radius: 25px;
+  font-weight: bolder;
+
+  filter: drop-shadow(10px 10px 8px #000);
+  box-shadow: inset 0px 0px 4px 2px #000000;
+  transition: 1s;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: slateGray;
+}
+
+@media (max-width: 768px) {
+  code {
+    width: 90vw;
+  }
+}
+
+/*Imagen diagrama waves 👀👀👀👀👀👀 img */
+.img-waves {
+  padding: 14px;
+  display: block;
+  border-radius: 35px;
+  border: outset 2px #0ff;
+  /*#2878ff*/
+  filter: drop-shadow(25px 25px 5.5px #000000);
+  box-shadow: inset 2px 2px 4px 2px #000000;
+  width: calc(100%);
+  max-width: 850px;
+  margin: 45px auto;
+  height: auto;
+
+}
+
+@media (max-width: 768px) {
+  .img-waves {
+    filter: drop-shadow(13px 15px 3px #000);
+    width: calc(100%);
+    border-radius: 35px;
+
+    margin-bottom: 45px;
+    margin-top: 45px;
+    margin-left: -5px;
+    height: auto;
+  }
+}
+
+/* imagen k_husos 👀👀👀👀👀👀 img */
+.k_husos {
+  float: right;
+  margin: 6px;
+  width: 25vw;
+  margin-left: 25px;
+  padding: 0px;
+  border-radius: 25px;
+  box-shadow: 0 0 4px 3px #0ff;
+  filter: drop-shadow(4px 4px 8px #0ff);
+}
+
+@media (max-width: 768px) {
+  .k_husos {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+/* imagen neurona 👀👀👀👀👀👀 img */
+.img-neurona {
+  width: 25vw;
+  float: right;
+  margin-left: 25px;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 6px 1px #000;
+}
+
+@media (max-width: 768px) {
+  .img-neurona {
+    width: 48vw;
+  }
+}
+
+/*section 🎬🎬🎦🎦🎬🎬🎦🎦🎬🎬🎦🎦 videos*/
+h3 {
+  color: var(--textoColor1, #fff);
+  text-shadow: var(--textoShadow3);
+  text-align: left;
+}
+
+.container-video {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.container-video-iframe {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* aspect ratio generic copied */
+}
+
+.container-video-iframe iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* 📰📰📰📰📰 Referencias 📚📚📚📚📚 */
+#referencias article {
+  /*La última imagen, pendiente de quitar*/
+  width: 90%;
+  text-align: left;
+  font-size: .7rem;
+  margin: 0 auto;
+  /* margin-bottom: 20px; */
+}
+
+/* imagen footer 👀👀👀👀👀👀 img */
+#main-doc #fondo-footer {
+  /*Imagen Footer*/
+  background-image: url("./media/FondoOjosFooter.jpg");
+  position: relative;
+  display: block;
+  width: calc(100% + 12px);
+  /* min-width: 250px; */
+  height: calc(25vh - 10px);
+  max-height: 110px;
+  overflow: hidden;
+  margin: 0px;
+  margin-top: 45px;
+  padding: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #000;
+
+}
+
+@media (max-width: 768px) {
+  #main-doc #fondo-footer {
+    height: 120px;
+    width: 100%;
+    border-top: 3px groove gray;
+    border-bottom: 3px groove gray;
+    margin-bottom: 0px;
+    display: block;
+    margin-left: -1px;
+    /* border-radius: 5px 5px 0px 0px; */
+    /* border-radius: 25px;
+    border: outset 2px #0ff;
+    filter: drop-shadow(20px 20px 8px rgb(0, 0, 0)); */
+    /* box-shadow: inset 0px 0px 6px 4px #000000; */
+  }
+}
