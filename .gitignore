@@ -1,0 +1,7 @@
+# Excluimos algo
+*
+
+# Incluimos lo necesario
+!.gitignore
+!index.html
+!styles.css
