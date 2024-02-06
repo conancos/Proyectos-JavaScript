@@ -1,8 +1,7 @@
-# Excluimos algo
-*
+# Excluimos imgs y settings
 
-# Incluimos lo necesario
-!.gitignore
-!index.html
-!styles.css
-!README.md
+prueba/**
+media/**
+
+# Se ingluye img to README.md
+!media/intro-brain-activity.jpg
