@@ -5,5 +5,5 @@ media/**
 desktop.ini
 
 # Se ingluye img to README.md
-!media/intro-brain-activity.jpg
+!media/intro-brain-activity.png
 !media/mind-logo.png
