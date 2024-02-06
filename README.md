@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="mind-while-logo" src="./media/mind-logo.png">
+<img alt="mind-while-logo" src="./media/mind-logo.png" height="60">
 
 # 🖋 Documentación Técnica 📋
 
@@ -25,8 +25,10 @@ Al último momento decidí implementar 2 botones para cambiar el estilo, e intro
 
 Pero haré mas cambios en un futuro.
 
-Gracias por la visita, ya que has llegado hasta aquí, te diré que hay un lugar oculto (LINK EN PALABRA RELACIONADA), donde podrás ver al youtuber español más grande (en todos los sentidos😂) del mundo!
+Gracias por la visita, ya que has leído hasta aquí, te diré que hay un lugar oculto (LINK EN PALABRA RELACIONADA), donde podrás ver al youtuber español más grande (en todos los sentidos😂) del mundo!
 Un video participando en una Sesión Grupal de Hipnósis muuy divertida.
+
+<br>
 
 <div align="center">
 
@@ -36,6 +38,6 @@ Un video participando en una Sesión Grupal de Hipnósis muuy divertida.
 
 <br>
 
-<img alt="img web-logo" src="./media/intro-brain-activity.jpg" height="450">
+<img alt="img web-logo" src="./media/intro-brain-activity.png" height="450">
 
 </div>
